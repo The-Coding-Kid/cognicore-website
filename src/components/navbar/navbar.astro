@@ -6,20 +6,6 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
     title: "About",
     path: "/about",
   },
@@ -81,7 +67,7 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
+        <a href="/login">Log in</a>
         <Link href="#" size="md">Sign up</Link>
       </div>
     </div>

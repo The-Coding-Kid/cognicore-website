@@ -14,8 +14,20 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Layout title="About">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title">Our Mission</Fragment>
+      <Fragment slot="desc">
+        CogniCore's mission centers around increasing awareness and education
+        about neuroscience, a fundamental but understudied part of life. We
+        focus on creating materials to inform and spread knowledge to others,
+        conduct outreach to directly aid neurodivergent populations, experiment
+        and research to ameliorate our own understandings, and impact our
+        community's perception about the brain (and what it can do for us!).
+        From volunteer work to in-lab research, podcasts and journalism, apps,
+        symposiums, panel discussions, and much more, the possibilities are
+        absolutely endless; CogniCore hopes to be a leading organization in this
+        process as we spread our passion for neuroscience and its importance to
+        the people around us.
+      </Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
@@ -42,14 +54,12 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                 background="#ffffff"
                 fit="cover"
                 position="center"
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
+                class="w-full rounded-md transition group-hover:-translate-y-1 group-hover:shadow-xl"
               />
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
-                {teamMemberEntry.data.name}
-              </h2>
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>
